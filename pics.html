@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<HEAD>
+<style type="text/css">
+body {
+    background-image: url("paper.gif");
+}
+</style>
+<SCRIPT type="text/javascript">
+  var num=1
+  img1 = new Image ()
+  img1.src = "IMG_2277.JPG"
+  img2 = new Image ()
+  img2.src = "IMG_2361.JPG"
+  img3 = new Image ()
+  img3.src = "IMG_2451.JPG"
+  img4 = new Image ()
+  img4.src = "IMG_2484.JPG"
+  img5 = new Image ()
+  img5.src = "IMG_2508.JPG"
+  img6 = new Image ()
+  img6.src = "IMG_2788.JPG"
+  img7 = new Image ()
+  img7.src = "IMG_2897.JPG"
+  img8 = new Image ()
+  img8.src = "IMG_3027.JPG"
+  img9 = new Image ()
+  img9.src = "IMG_3146.JPG"   
+  img10 = new Image ()
+  img10.src = "IMG_3169.JPG" 
+   
+  
+ function slideshow()
+  {
+   num=num+1
+   if (num==10)
+    {num=1}
+ document.mypic.src=eval("img"+num+".src")
+   }
+</SCRIPT>
+</HEAD>
+<BODY>
+<CENTER>
+<img src="IMG_2277.JPG" width="600" height="800" name="mypic" alt=""/>
+<p>
+
+<A HREF="JavaScript:slideshow()">
+   Next picture</A>
+
+</CENTER>
+</BODY>
+</HTML>
